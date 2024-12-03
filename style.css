@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(192, 94, 241);
+    padding: 40px 40px;
+}
+
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.container header {
+    font-size: 1.5rem;
+    position: relative;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    padding: 20px 0px;
+}
+
+.container .form {
+    margin-top: 30px;
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: #333;
+}
+
+.form .input-box input {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    margin-top: 8px;
+    color: #707070;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+.form .formerror{
+    color: red;
+}
+
+.form .column{
+    display: flex;
+    column-gap: 15px;
+}
+
+.form .gender-box{
+    margin-top: 20px;
+}
+
+.gender-box h3{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.form .gender-option{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+}
+
+.form .gender{
+    display: flex; 
+    flex-wrap: wrap;
+    column-gap: 5px;
+}
+
+.gender label{
+    color: #707070;
+}
+
+.form .pointer{
+    cursor: pointer;
+}
+
+.form .select-box{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    /* outline: none; */
+    font-size: 1rem;
+    margin-top: 8px;
+    color: #707070;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.select-box select{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #707070;
+    font-size: 1rem; 
+}
+
+.form .input-box .select-box{
+    margin-top: 15px;
+}
+
+.form .input-box input{
+    margin-top: 15px;
+}
+
+.form button{
+    text-align: center;
+    height: 55px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 400;
+    background-color: rgb(214, 43, 43);
+
+}
+
+.form button:hover{
+    background-color: rgb(243, 143, 143);
+}
+
+
+
+ 
+
+/* responsive */
+
+@media only screen and (max-width: 500px){
+    form .column{
+        flex-wrap: wrap;
+    }
+}

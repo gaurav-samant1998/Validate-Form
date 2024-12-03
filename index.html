@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="container">
+        <header>Registration Form</header>
+        <form action="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post" class="form">
+            <!-- <div class="feild"> -->
+                <div class="input-box" id="name">
+                    <label>Full Name</label>
+                    
+                    <input type="text" placeholder="Enter your name" name="fname" required> <span class="formerror"></span>  
+            
+                </div>
+                <!-- <span class="error name-error">
+                    <i class="fa-solid fa-circle-exclamation error-icon"></i>
+                    <p class="error-text">name cant be black</p>
+                </span> -->
+            <!-- </div> -->
+
+            <!-- <div class="feild"> -->
+                <div class="input-box" id="email">
+                    <label>Email Address</label>
+                    <input type="text" placeholder="Enter email address" name="femail" required> <span class="formerror"></span>  
+                    <!-- <span class="error email-error">
+                        <i class="fa-solid fa-circle-exclamation error-icon"></i>
+                        <p class="error-text">please enter valid email</p>
+                    </span> -->
+                </div>
+            <!-- </div> -->
+
+            <div class="column">
+                <div class="input-box" id="phone">
+                    <label>Phone Number</label>
+                    <input type="number" placeholder="Enter your number" name="fphone" required> <span class="formerror"></span>  
+                </div>
+
+
+                <div class="input-box">
+                    <label>Date of birth</label>
+                    <input type="date" placeholder="Enter your birth date" name="fdate" required> <span class="formerror"></span>  
+                </div>
+            </div>
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender" class="pointer" checked>
+                        <label for="check-male" class="pointer">Male</label>
+                    </div>
+
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender" class="pointer">
+                        <label for="check-female" class="pointer">Female</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="input-box" id="address">
+                <label>Address</label>
+                <input type="text" placeholder="Enter your address" name="faddress" required> <span class="formerror"></span>  
+
+                <div class="column">
+                    <div class="select-box">
+                        <select> 
+                            <option hidden>Country</option>
+                            <option>India</option>
+                            <option>America</option>
+                            <option>England</option>
+                            <option>Africa</option>
+                            <option>China</option>
+                            <option>Japan</option>
+                        </select>
+                    </div>
+                    <input type="text" placeholder="Enter your City" name="fcity" class="formerror" required >
+                </div>
+                <div class="column">
+                    <input type="text" placeholder="Enter your Region" name="fregion" required> <span class="formerror"></span>  
+                    <input type="number" placeholder="Enter postal code" name="fcode" required> <span class="formerror"></span>  
+                </div>
+            </div>
+
+            <button>Submit</button>
+
+        </form>
+    </section>
+<script src="script.js"></script>
+</body>
+
+</html>
